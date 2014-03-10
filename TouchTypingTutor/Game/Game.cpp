@@ -2,7 +2,7 @@
 
 #include <SFML/Audio.hpp>
 
-#include "ResourcePath.hpp"
+#include "Utils/resource_path.hpp"
 
 Game::Game() {
 }

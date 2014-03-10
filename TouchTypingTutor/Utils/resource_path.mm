@@ -1,4 +1,4 @@
-#include "ResourcePath.hpp"
+#include "Utils/resource_path.hpp"
 #import <Foundation/Foundation.h>
 
 std::string resourcePath(void) {
