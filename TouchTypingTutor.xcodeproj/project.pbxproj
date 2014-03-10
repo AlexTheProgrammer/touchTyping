@@ -19,6 +19,7 @@
 /* Begin PBXFileReference section */
 		71D4780718CDE36100161C50 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Game.cpp; path = Game/Game.cpp; sourceTree = "<group>"; };
 		71D4780818CDE36100161C50 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = Game/Game.h; sourceTree = "<group>"; };
+		71D4780B18CE526600161C50 /* core_macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = core_macros.h; path = Utils/core_macros.h; sourceTree = "<group>"; };
 		71EF786818CDA64600AA15D6 /* TouchTypingTutor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchTypingTutor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71EF786C18CDA64600AA15D6 /* TouchTypingTutor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TouchTypingTutor-Info.plist"; sourceTree = "<group>"; };
 		71EF786D18CDA64600AA15D6 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -50,6 +51,14 @@
 			name = Game;
 			sourceTree = "<group>";
 		};
+		71D4780C18CE528600161C50 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				71D4780B18CE526600161C50 /* core_macros.h */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		71EF785E18CDA64600AA15D6 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +78,7 @@
 		71EF786A18CDA64600AA15D6 /* TouchTypingTutor */ = {
 			isa = PBXGroup;
 			children = (
+				71D4780C18CE528600161C50 /* Utils */,
 				71D4780A18CDE36B00161C50 /* Game */,
 				71EF786D18CDA64600AA15D6 /* ResourcePath.mm */,
 				71EF786F18CDA64600AA15D6 /* ResourcePath.hpp */,
@@ -298,6 +308,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = "TouchTypingTutor/TouchTypingTutor-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/TouchTypingTutor";
 			};
 			name = Debug;
 		};
@@ -306,6 +317,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = "TouchTypingTutor/TouchTypingTutor-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/TouchTypingTutor";
 			};
 			name = Release;
 		};

@@ -1,17 +1,20 @@
-#ifndef __TouchTypingTutor__Game__
-#define __TouchTypingTutor__Game__
-#endif /* defined(__TouchTypingTutor__Game__) */
+#ifndef __TTT_GAME_H_
+#define __TTT_GAME_H_
 
 #include <SFML/Graphics.hpp>
+#include "Utils/core_macros.h"
 
 class Game {
-public:
+ public:
   Game();
+
+  void Init();
 
   void Run();
 
-private:
-  sf::RenderWindow window;
-  sf::Sprite sprite;
-  sf::Text text;
+ private:
+  std::shared_ptr<sf::RenderWindow> window_;
+  DISALLOW_COPY_AND_ASSIGN(Game);
 };
+
+#endif
