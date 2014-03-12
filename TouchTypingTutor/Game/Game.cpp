@@ -51,4 +51,3 @@ void Game::Run() {
     window_->display();
   }
 }
-
