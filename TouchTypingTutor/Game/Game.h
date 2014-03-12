@@ -1,19 +1,29 @@
 #ifndef __TTT_GAME_H_
 #define __TTT_GAME_H_
 
+#include <stack>
 #include <SFML/Graphics.hpp>
+#include "Game/ViewControllers/view_controller.h"
 #include "Utils/core_macros.h"
 
+// This class runs the TouchTypingTutor game.
 class Game {
  public:
   Game();
 
-  void Init();
+  // Initialize the game state. Returns non-zero on failure.
+  int Init();
 
+  // Start the game loop.
   void Run();
 
  private:
+  // The render window that the game is drawn on.
   std::shared_ptr<sf::RenderWindow> window_;
+
+  // A stack of view controllers. The top view controller is displayed.
+  std::stack<std::unique_ptr<ViewController>> viewControllerStack_;
+
   DISALLOW_COPY_AND_ASSIGN(Game);
 };
 

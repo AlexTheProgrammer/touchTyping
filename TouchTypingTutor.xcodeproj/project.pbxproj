@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		71B69A2718CE59E00067C81A /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71B69A2518CE59E00067C81A /* game.cpp */; };
 		71B69A2D18CE5A5D0067C81A /* resource_path.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71B69A2C18CE5A5D0067C81A /* resource_path.mm */; };
+		71B69A3018D0599A0067C81A /* view_controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71B69A2E18D0599A0067C81A /* view_controller.cpp */; };
+		71B69A5618D0618D0067C81A /* menu_view_controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71B69A5418D0618D0067C81A /* menu_view_controller.cpp */; };
 		71EF787118CDA64600AA15D6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71EF787018CDA64600AA15D6 /* main.cpp */; };
 		71EF787A18CDA64600AA15D6 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 71EF787918CDA64600AA15D6 /* icon.png */; };
 /* End PBXBuildFile section */
@@ -18,6 +20,10 @@
 		71B69A2618CE59E00067C81A /* game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game.h; path = Game/game.h; sourceTree = "<group>"; };
 		71B69A2B18CE5A5D0067C81A /* resource_path.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = resource_path.hpp; path = Utils/resource_path.hpp; sourceTree = "<group>"; };
 		71B69A2C18CE5A5D0067C81A /* resource_path.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = resource_path.mm; path = Utils/resource_path.mm; sourceTree = "<group>"; };
+		71B69A2E18D0599A0067C81A /* view_controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = view_controller.cpp; path = Game/ViewControllers/view_controller.cpp; sourceTree = "<group>"; };
+		71B69A2F18D0599A0067C81A /* view_controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = view_controller.h; path = Game/ViewControllers/view_controller.h; sourceTree = "<group>"; };
+		71B69A5418D0618D0067C81A /* menu_view_controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = menu_view_controller.cpp; path = Game/ViewControllers/menu_view_controller.cpp; sourceTree = "<group>"; };
+		71B69A5518D0618D0067C81A /* menu_view_controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = menu_view_controller.h; path = Game/ViewControllers/menu_view_controller.h; sourceTree = "<group>"; };
 		71D4780B18CE526600161C50 /* core_macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = core_macros.h; path = Utils/core_macros.h; sourceTree = "<group>"; };
 		71EF786818CDA64600AA15D6 /* TouchTypingTutor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchTypingTutor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71EF786C18CDA64600AA15D6 /* TouchTypingTutor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TouchTypingTutor-Info.plist"; sourceTree = "<group>"; };
@@ -36,9 +42,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71B69A3118D05A210067C81A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				71B69A2E18D0599A0067C81A /* view_controller.cpp */,
+				71B69A2F18D0599A0067C81A /* view_controller.h */,
+				71B69A5418D0618D0067C81A /* menu_view_controller.cpp */,
+				71B69A5518D0618D0067C81A /* menu_view_controller.h */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		71D4780A18CDE36B00161C50 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				71B69A3118D05A210067C81A /* ViewControllers */,
 				71B69A2518CE59E00067C81A /* game.cpp */,
 				71B69A2618CE59E00067C81A /* game.h */,
 			);
@@ -180,6 +198,8 @@
 			files = (
 				71B69A2D18CE5A5D0067C81A /* resource_path.mm in Sources */,
 				71EF787118CDA64600AA15D6 /* main.cpp in Sources */,
+				71B69A5618D0618D0067C81A /* menu_view_controller.cpp in Sources */,
+				71B69A3018D0599A0067C81A /* view_controller.cpp in Sources */,
 				71B69A2718CE59E00067C81A /* game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
