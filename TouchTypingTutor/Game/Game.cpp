@@ -1,6 +1,9 @@
 #include "Game/Game.h"
 
+#include "Game/ViewControllers/level_view_controller.h"
+
 #include "Game/ViewControllers/menu_view_controller.h"
+
 #include "Utils/resource_path.hpp"
 
 Game::Game() {
@@ -18,8 +21,14 @@ int Game::Init() {
 
   window_->setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
 
-  std::unique_ptr<ViewController> menuViewController (new MenuViewController);
-  viewControllerStack_.push(std::move(menuViewController));
+
+  //replace top element on stack as LevelViewController to LevelViewController code
+  std::unique_ptr<ViewController> levelViewController (new LevelViewController);
+  viewControllerStack_.push(std::move(levelViewController));
+
+    
+  //std::unique_ptr<ViewController> menuViewController (new MenuViewController);
+  //viewControllerStack_.push(std::move(menuViewController));
 
   return 0;
 }
