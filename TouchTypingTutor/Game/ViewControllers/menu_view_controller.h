@@ -9,4 +9,4 @@ class MenuViewController: public ViewController {
   void UpdateDisplay(std::shared_ptr<sf::RenderWindow> window);
 };
 
-#endif
+#endif // __TTT_MENU_VIEW_CONTROLLER_

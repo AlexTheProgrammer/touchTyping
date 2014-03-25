@@ -17,4 +17,4 @@ class ViewController {
   virtual void UpdateDisplay(std::shared_ptr<sf::RenderWindow> window) = 0;
 };
 
-#endif
+#endif // __TTT_VIEW_CONTROLLER_H_

@@ -1,17 +1,19 @@
-#ifndef __TouchTypingTutor__level_view_controller__
-#define __TouchTypingTutor__level_view_controller__
+#ifndef __TTT__LEVEL_VIEW_CONTROLLER_H_
+#define __TTT__LEVEL_VIEW_CONTROLLER_H_
 
 #include <iostream>
 #include "Game/ViewControllers/view_controller.h"
 
-class LevelViewController: public ViewController{
-public:
-  sf::Text text;
-  sf::Font font;
-  sf::RectangleShape border;
+class LevelViewController: public ViewController {
+ public:
   void UpdateDisplay(std::shared_ptr<sf::RenderWindow> window);
   void Init();
-  void MoveWord(sf::Text&);
+
+ private:
+  void MoveWord(sf::Text& word);
+  sf::Text text_;
+  sf::Font font_;
+  sf::RectangleShape border_;
 };
 
-#endif
+#endif // __TTT__LEVEL_VIEW_CONTROLLER_H_

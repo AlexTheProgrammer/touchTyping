@@ -50,12 +50,12 @@
 		71B69A3118D05A210067C81A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				4292D8AE18D93869001D347D /* level_view_controller.h */,
 				4292D8AC18D93856001D347D /* level_view_controller.cpp */,
-				71B69A2E18D0599A0067C81A /* view_controller.cpp */,
-				71B69A2F18D0599A0067C81A /* view_controller.h */,
+				4292D8AE18D93869001D347D /* level_view_controller.h */,
 				71B69A5418D0618D0067C81A /* menu_view_controller.cpp */,
 				71B69A5518D0618D0067C81A /* menu_view_controller.h */,
+				71B69A2E18D0599A0067C81A /* view_controller.cpp */,
+				71B69A2F18D0599A0067C81A /* view_controller.h */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
