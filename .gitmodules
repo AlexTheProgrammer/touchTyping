@@ -1,0 +1,3 @@
+[submodule "TouchTypingTutor/ThirdParty/Thor"]
+	path = TouchTypingTutor/ThirdParty/Thor
+	url = https://github.com/Bromeon/Thor.git
