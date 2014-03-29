@@ -1,4 +1,4 @@
-#include "level_view_controller.h"
+#include "Game/ViewControllers/level_view_controller.h"
 
 #include "Utils/ResourceManager.h"
 
@@ -17,9 +17,9 @@ void LevelViewController::Init() {
 
 void LevelViewController::UpdateDisplay(std::shared_ptr<sf::RenderWindow> window) {
   if (text_.getPosition().y == border_.getSize().y) {
-    text_.setPosition(0,0);
+    text_.setPosition(0, 0);
   }
-  text_.move(0,1);
+  text_.move(0, 1);
   window->clear(sf::Color::White);
   window->draw(text_);
 }

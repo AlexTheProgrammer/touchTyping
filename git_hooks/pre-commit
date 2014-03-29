@@ -1,0 +1,11 @@
+#!/bin/bash
+GIT_ROOT=$(git rev-parse --show-toplevel)
+$GIT_ROOT/git_hooks/cpplint.py --linelength=100 --filter=-legal/copyright $(find $GIT_ROOT -not -path "*/ThirdParty/*" -name "*.cpp" -o -name "*.h")
+LINT_STATUS=$?
+if [ "$LINT_STATUS" -ne "0" ]
+then
+	echo "Pre-commit checks failed."
+else
+	echo "Pre-commit checks passed."
+fi
+exit $LINT_STATUS

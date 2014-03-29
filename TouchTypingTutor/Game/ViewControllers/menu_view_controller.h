@@ -1,5 +1,5 @@
-#ifndef __TTT_MENU_VIEW_CONTROLLER_
-#define __TTT_MENU_VIEW_CONTROLLER_
+#ifndef TOUCHTYPINGTUTOR_GAME_VIEWCONTROLLERS_MENU_VIEW_CONTROLLER_H_
+#define TOUCHTYPINGTUTOR_GAME_VIEWCONTROLLERS_MENU_VIEW_CONTROLLER_H_
 
 #include "Game/ViewControllers/view_controller.h"
 
@@ -9,4 +9,4 @@ class MenuViewController: public ViewController {
   void UpdateDisplay(std::shared_ptr<sf::RenderWindow> window);
 };
 
-#endif // __TTT_MENU_VIEW_CONTROLLER_
+#endif  // TOUCHTYPINGTUTOR_GAME_VIEWCONTROLLERS_MENU_VIEW_CONTROLLER_H_

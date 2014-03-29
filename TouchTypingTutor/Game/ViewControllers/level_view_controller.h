@@ -1,5 +1,5 @@
-#ifndef __TTT__LEVEL_VIEW_CONTROLLER_H_
-#define __TTT__LEVEL_VIEW_CONTROLLER_H_
+#ifndef TOUCHTYPINGTUTOR_GAME_VIEWCONTROLLERS_LEVEL_VIEW_CONTROLLER_H_
+#define TOUCHTYPINGTUTOR_GAME_VIEWCONTROLLERS_LEVEL_VIEW_CONTROLLER_H_
 
 #include "Game/ViewControllers/view_controller.h"
 
@@ -9,9 +9,9 @@ class LevelViewController: public ViewController {
   void Init();
 
  private:
-  void MoveWord(sf::Text& word);
+  void MoveWord(const sf::Text& word);
   sf::Text text_;
   sf::RectangleShape border_;
 };
 
-#endif // __TTT__LEVEL_VIEW_CONTROLLER_H_
+#endif  // TOUCHTYPINGTUTOR_GAME_VIEWCONTROLLERS_LEVEL_VIEW_CONTROLLER_H_

@@ -1,7 +1,8 @@
-#ifndef __TTT_RESOURCE_MANAGER_H_
-#define __TTT_RESOURCE_MANAGER_H_
+#ifndef TOUCHTYPINGTUTOR_UTILS_RESOURCEMANAGER_H_
+#define TOUCHTYPINGTUTOR_UTILS_RESOURCEMANAGER_H_
 
 #include <SFML/Graphics.hpp>
+#include <string>
 
 class ResourceManager {
  public:
@@ -11,4 +12,4 @@ class ResourceManager {
   ResourceManager() {}
 };
 
-#endif // __TTT_RESOURCE_MANAGER_H_
+#endif  // TOUCHTYPINGTUTOR_UTILS_RESOURCEMANAGER_H_

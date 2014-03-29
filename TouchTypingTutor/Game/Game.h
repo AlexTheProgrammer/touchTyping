@@ -1,8 +1,8 @@
-#ifndef __TTT_GAME_H_
-#define __TTT_GAME_H_
+#ifndef TOUCHTYPINGTUTOR_GAME_GAME_H_
+#define TOUCHTYPINGTUTOR_GAME_GAME_H_
 
-#include <stack>
 #include <SFML/Graphics.hpp>
+#include <stack>
 #include "Game/ViewControllers/view_controller.h"
 #include "Utils/core_macros.h"
 
@@ -27,4 +27,4 @@ class Game {
   DISALLOW_COPY_AND_ASSIGN(Game);
 };
 
-#endif
+#endif  // TOUCHTYPINGTUTOR_GAME_GAME_H_

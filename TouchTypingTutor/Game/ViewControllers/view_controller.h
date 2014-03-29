@@ -1,5 +1,5 @@
-#ifndef __TTT_VIEW_CONTROLLER_H_
-#define __TTT_VIEW_CONTROLLER_H_
+#ifndef TOUCHTYPINGTUTOR_GAME_VIEWCONTROLLERS_VIEW_CONTROLLER_H_
+#define TOUCHTYPINGTUTOR_GAME_VIEWCONTROLLERS_VIEW_CONTROLLER_H_
 
 #include <SFML/Graphics.hpp>
 
@@ -17,4 +17,4 @@ class ViewController {
   virtual void UpdateDisplay(std::shared_ptr<sf::RenderWindow> window) = 0;
 };
 
-#endif // __TTT_VIEW_CONTROLLER_H_
+#endif  // TOUCHTYPINGTUTOR_GAME_VIEWCONTROLLERS_VIEW_CONTROLLER_H_

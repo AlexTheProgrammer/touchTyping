@@ -17,3 +17,6 @@ after cloning the main repository to pull in the Thor subproject.
 
 After that, build and install with Cmake.
 
+
+If you wish to contribute to the project, please install the tracked hooks via ./hooks/link-hooks
+

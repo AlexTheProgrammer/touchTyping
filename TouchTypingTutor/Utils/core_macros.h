@@ -1,5 +1,5 @@
-#ifndef __TTT_CORE_MACROS_H_
-#define __TTT_CORE_MACROS_H_
+#ifndef TOUCHTYPINGTUTOR_UTILS_CORE_MACROS_H_
+#define TOUCHTYPINGTUTOR_UTILS_CORE_MACROS_H_
 
 // A macro to disallow the copy constructor and operator= functions
 // This should be used in the private: declarations for a class
@@ -7,4 +7,4 @@
 TypeName(const TypeName&);               \
 void operator=(const TypeName&)
 
-#endif
+#endif  // TOUCHTYPINGTUTOR_UTILS_CORE_MACROS_H_

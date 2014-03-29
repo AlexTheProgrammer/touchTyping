@@ -1,4 +1,4 @@
-#include "view_controller.h"
+#include "Game/ViewControllers/view_controller.h"
 
 void ViewController::Init() {
   return;
