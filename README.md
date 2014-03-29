@@ -18,5 +18,5 @@ after cloning the main repository to pull in the Thor subproject.
 After that, build and install with Cmake.
 
 
-If you wish to contribute to the project, please install the tracked hooks via ./git_hooks/link-hooks
+If you wish to contribute to the project, please install the tracked hooks via $(git rev-parse --show-toplevel)/git_hooks/link-hooks
 
