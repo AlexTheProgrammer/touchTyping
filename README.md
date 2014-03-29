@@ -3,13 +3,17 @@ TouchTypingTutor
 
 A game to teach touch typing built for OS X using SFML.
 
-Please install SFML http://www.sfml-dev.org/ to build project.
+Please install dependencies
+- SFML 2.1 http://www.sfml-dev.org/
+- Thor https://github.com/Bromeon/Thor at commit f57666db6f187eb57bbc0947456cce2159a9b617
 
-After cloning you will need to run 
+This version of Thor is included as a subproject for your convenience. If you wish to install it this way, you will need to run
 
 $ git submodule init
 
 $ git submodule update
 
-to pull in the Thor subproject.
+after cloning the main repository to pull in the Thor subproject.
+
+After that, build and install with Cmake.
 
