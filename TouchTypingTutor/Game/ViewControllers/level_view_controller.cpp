@@ -1,13 +1,10 @@
 #include "level_view_controller.h"
 
-#include <string>
-
-#include "Utils/resource_path.hpp"
+#include "Utils/ResourceManager.h"
 
 void LevelViewController::Init() {
   // Set up text.
-  font_.loadFromFile(resourcePath() + "Arial.ttf");
-  text_.setFont(font_);
+  text_.setFont(*ResourceManager::FontFromFile("Arial.ttf"));
   text_.setString("Hello world");
   text_.setCharacterSize(24);
   text_.setColor(sf::Color::Red);

@@ -1,7 +1,6 @@
 #ifndef __TTT__LEVEL_VIEW_CONTROLLER_H_
 #define __TTT__LEVEL_VIEW_CONTROLLER_H_
 
-#include <iostream>
 #include "Game/ViewControllers/view_controller.h"
 
 class LevelViewController: public ViewController {
@@ -12,7 +11,6 @@ class LevelViewController: public ViewController {
  private:
   void MoveWord(sf::Text& word);
   sf::Text text_;
-  sf::Font font_;
   sf::RectangleShape border_;
 };
 
