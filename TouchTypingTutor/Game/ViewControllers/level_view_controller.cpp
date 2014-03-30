@@ -9,14 +9,10 @@ void LevelViewController::Init() {
   text_.setCharacterSize(24);
   text_.setColor(sf::Color::Red);
   text_.setStyle(sf::Text::Bold | sf::Text::Underlined);
-
-  // Set up rectangle to mimic border.
-  const sf::Vector2f size = sf::Vector2f(800, 600);
-  border_.setSize(size);
 }
 
-void LevelViewController::UpdateDisplay(std::shared_ptr<sf::RenderWindow> window) {
-  if (text_.getPosition().y == border_.getSize().y) {
+void LevelViewController::UpdateDisplay(sf::RenderWindow *window) {
+  if (text_.getPosition().y == window->getSize().y) {
     text_.setPosition(0, 0);
   }
   text_.move(0, 1);

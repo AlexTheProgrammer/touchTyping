@@ -14,7 +14,7 @@ class ViewController {
 
   // Override this method to update the display.
   // There is no need to call window->display() from within.
-  virtual void UpdateDisplay(std::shared_ptr<sf::RenderWindow> window) = 0;
+  virtual void UpdateDisplay(sf::RenderWindow *window) = 0;
 };
 
 #endif  // TOUCHTYPINGTUTOR_GAME_VIEWCONTROLLERS_VIEW_CONTROLLER_H_

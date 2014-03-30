@@ -7,6 +7,7 @@
 class ResourceManager {
  public:
   static std::shared_ptr<sf::Font> FontFromFile(std::string filename);
+  static std::shared_ptr<sf::Image> ImageFromFile(std::string filename);
 
  private:
   ResourceManager() {}

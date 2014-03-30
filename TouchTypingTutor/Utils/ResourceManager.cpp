@@ -8,3 +8,8 @@ std::shared_ptr<sf::Font> ResourceManager::FontFromFile(std::string filename) {
   static thor::ResourceCache<sf::Font> cache;
   return cache.acquire(thor::Resources::fromFile<sf::Font>(resourcePath() + filename));
 }
+
+std::shared_ptr<sf::Image> ResourceManager::ImageFromFile(std::string filename) {
+  static thor::ResourceCache<sf::Image> cache;
+  return cache.acquire(thor::Resources::fromFile<sf::Image>(resourcePath() + filename));
+}

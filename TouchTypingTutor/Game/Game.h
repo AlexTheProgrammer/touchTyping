@@ -19,7 +19,7 @@ class Game {
 
  private:
   // The render window that the game is drawn on.
-  std::shared_ptr<sf::RenderWindow> window_;
+  sf::RenderWindow window_;
 
   // A stack of view controllers. The top view controller is displayed.
   std::stack<std::unique_ptr<ViewController>> viewControllerStack_;
