@@ -21,7 +21,7 @@
 /* Begin PBXFileReference section */
 		4292D8AC18D93856001D347D /* level_view_controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = level_view_controller.cpp; path = Game/ViewControllers/level_view_controller.cpp; sourceTree = "<group>"; };
 		4292D8AE18D93869001D347D /* level_view_controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = level_view_controller.h; path = Game/ViewControllers/level_view_controller.h; sourceTree = "<group>"; };
-		4292D8AF18D95746001D347D /* Arial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arial.ttf; sourceTree = "<group>"; };
+		4292D8AF18D95746001D347D /* Arial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Resources/Arial.ttf; sourceTree = "<group>"; };
 		7173BF3018E69F450077F141 /* ResourceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ResourceManager.cpp; path = Utils/ResourceManager.cpp; sourceTree = "<group>"; };
 		7173BF3118E69F450077F141 /* ResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResourceManager.h; path = Utils/ResourceManager.h; sourceTree = "<group>"; };
 		71B69A2518CE59E00067C81A /* game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game.cpp; path = Game/game.cpp; sourceTree = "<group>"; };
@@ -36,7 +36,7 @@
 		71EF786818CDA64600AA15D6 /* TouchTypingTutor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchTypingTutor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71EF786C18CDA64600AA15D6 /* TouchTypingTutor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TouchTypingTutor-Info.plist"; sourceTree = "<group>"; };
 		71EF787018CDA64600AA15D6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		71EF787918CDA64600AA15D6 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+    71EF787918CDA64600AA15D6 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Resources/icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,8 +182,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4292D8B018D95746001D347D /* Arial.ttf in Resources */,
-				71EF787A18CDA64600AA15D6 /* icon.png in Resources */,
+				7173BF3718E7ECAE0077F141 /* icon.png in Resources */,
+				7173BF3618E7ECAE0077F141 /* Arial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
