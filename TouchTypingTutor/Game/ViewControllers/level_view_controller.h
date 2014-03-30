@@ -5,7 +5,7 @@
 
 class LevelViewController: public ViewController {
  public:
-  void UpdateDisplay(sf::RenderWindow *window);
+  void UpdateDisplay(sf::RenderWindow *window, const sf::Time &elapsed);
   void Init();
 
  private:

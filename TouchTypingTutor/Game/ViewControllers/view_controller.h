@@ -14,7 +14,8 @@ class ViewController {
 
   // Override this method to update the display.
   // There is no need to call window->display() from within.
-  virtual void UpdateDisplay(sf::RenderWindow *window) = 0;
+  // |elapsed| will give the time elapsed since the last frame.
+  virtual void UpdateDisplay(sf::RenderWindow *window, const sf::Time &elapsed) = 0;
 };
 
 #endif  // TOUCHTYPINGTUTOR_GAME_VIEWCONTROLLERS_VIEW_CONTROLLER_H_

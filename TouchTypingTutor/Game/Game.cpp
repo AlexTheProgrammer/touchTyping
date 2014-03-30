@@ -22,6 +22,8 @@ int Game::Init() {
   // std::unique_ptr<ViewController> menuViewController (new MenuViewController);
   // viewControllerStack_.push(std::move(menuViewController));
 
+  clock_.restart();
+
   return 0;
 }
 
@@ -46,9 +48,18 @@ void Game::Run() {
       topController->ProcessEvent(event);
     }
     std::unique_ptr<ViewController> &topController = viewControllerStack_.top();
-    topController->UpdateDisplay(&window_);
+    topController->UpdateDisplay(&window_, clock_.getElapsedTime());
+    clock_.restart();
 
     // Update the window.
     window_.display();
+
+    sf::sleep(sf::seconds(1/framerate_));
+  }
+}
+
+void Game::setFramerate(float fps) {
+  if (fps > 0) {
+    framerate_ = fps;
   }
 }

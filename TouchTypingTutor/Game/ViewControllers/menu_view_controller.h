@@ -6,7 +6,7 @@
 // This view controller displays the menu screen.
 class MenuViewController: public ViewController {
  public:
-  void UpdateDisplay(sf::RenderWindow *window);
+  void UpdateDisplay(sf::RenderWindow *window, const sf::Time &elapsed);
 };
 
 #endif  // TOUCHTYPINGTUTOR_GAME_VIEWCONTROLLERS_MENU_VIEW_CONTROLLER_H_

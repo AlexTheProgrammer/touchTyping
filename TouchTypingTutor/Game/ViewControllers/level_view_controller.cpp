@@ -11,7 +11,7 @@ void LevelViewController::Init() {
   text_.setStyle(sf::Text::Bold | sf::Text::Underlined);
 }
 
-void LevelViewController::UpdateDisplay(sf::RenderWindow *window) {
+void LevelViewController::UpdateDisplay(sf::RenderWindow *window, const sf::Time &elapsed) {
   if (text_.getPosition().y == window->getSize().y) {
     text_.setPosition(0, 0);
   }
