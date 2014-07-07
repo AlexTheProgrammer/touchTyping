@@ -8,20 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		4292D8AD18D93856001D347D /* level_view_controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4292D8AC18D93856001D347D /* level_view_controller.cpp */; };
-		4292D8B018D95746001D347D /* Arial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4292D8AF18D95746001D347D /* Arial.ttf */; };
+		710DA61E196AB1EB004A8A7E /* Resources/Arial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4292D8AF18D95746001D347D /* Resources/Arial.ttf */; };
 		7173BF3318E6A1980077F141 /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7173BF3018E69F450077F141 /* ResourceManager.cpp */; };
 		71B69A2718CE59E00067C81A /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71B69A2518CE59E00067C81A /* game.cpp */; };
 		71B69A2D18CE5A5D0067C81A /* resource_path.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71B69A2C18CE5A5D0067C81A /* resource_path.mm */; };
 		71B69A3018D0599A0067C81A /* view_controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71B69A2E18D0599A0067C81A /* view_controller.cpp */; };
 		71B69A5618D0618D0067C81A /* menu_view_controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71B69A5418D0618D0067C81A /* menu_view_controller.cpp */; };
 		71EF787118CDA64600AA15D6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71EF787018CDA64600AA15D6 /* main.cpp */; };
-		71EF787A18CDA64600AA15D6 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 71EF787918CDA64600AA15D6 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4292D8AC18D93856001D347D /* level_view_controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = level_view_controller.cpp; path = Game/ViewControllers/level_view_controller.cpp; sourceTree = "<group>"; };
 		4292D8AE18D93869001D347D /* level_view_controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = level_view_controller.h; path = Game/ViewControllers/level_view_controller.h; sourceTree = "<group>"; };
-		4292D8AF18D95746001D347D /* Arial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Resources/Arial.ttf; sourceTree = "<group>"; };
+		4292D8AF18D95746001D347D /* Resources/Arial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Resources/Arial.ttf; sourceTree = "<group>"; };
 		7173BF3018E69F450077F141 /* ResourceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ResourceManager.cpp; path = Utils/ResourceManager.cpp; sourceTree = "<group>"; };
 		7173BF3118E69F450077F141 /* ResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResourceManager.h; path = Utils/ResourceManager.h; sourceTree = "<group>"; };
 		71B69A2518CE59E00067C81A /* game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game.cpp; path = Game/game.cpp; sourceTree = "<group>"; };
@@ -36,7 +35,6 @@
 		71EF786818CDA64600AA15D6 /* TouchTypingTutor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchTypingTutor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71EF786C18CDA64600AA15D6 /* TouchTypingTutor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TouchTypingTutor-Info.plist"; sourceTree = "<group>"; };
 		71EF787018CDA64600AA15D6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-    71EF787918CDA64600AA15D6 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Resources/icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,8 +122,7 @@
 		71EF787218CDA64600AA15D6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4292D8AF18D95746001D347D /* Arial.ttf */,
-				71EF787918CDA64600AA15D6 /* icon.png */,
+				4292D8AF18D95746001D347D /* Resources/Arial.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -182,8 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7173BF3718E7ECAE0077F141 /* icon.png in Resources */,
-				7173BF3618E7ECAE0077F141 /* Arial.ttf in Resources */,
+				710DA61E196AB1EB004A8A7E /* Resources/Arial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
