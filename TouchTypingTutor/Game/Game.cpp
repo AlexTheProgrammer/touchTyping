@@ -2,7 +2,7 @@
 
 #include "Game/ViewControllers/level_view_controller.h"
 #include "Game/ViewControllers/menu_view_controller.h"
-#include "Utils/ResourceManager.h"
+#include "Utils/resource_manager.h"
 
 Game::Game() : window_(sf::VideoMode(800, 600), "SFML window") {
 }

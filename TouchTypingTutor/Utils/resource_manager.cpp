@@ -1,4 +1,4 @@
-#include "Utils/ResourceManager.h"
+#include "Utils/resource_manager.h"
 
 #include <Thor/Resources.hpp>
 #include <string>

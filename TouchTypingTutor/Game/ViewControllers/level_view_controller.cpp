@@ -1,6 +1,6 @@
 #include "Game/ViewControllers/level_view_controller.h"
 
-#include "Utils/ResourceManager.h"
+#include "Utils/resource_manager.h"
 
 void LevelViewController::Init() {
   // Set up text.
