@@ -3,7 +3,7 @@
 
 #include "Game/ViewControllers/view_controller.h"
 
-#include "Level/level.h"
+#include "Game/Level/level.h"
 
 class LevelViewController: public ViewController {
  public:
