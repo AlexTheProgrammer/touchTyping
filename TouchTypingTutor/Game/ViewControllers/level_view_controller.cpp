@@ -1,8 +1,8 @@
 #include "Game/ViewControllers/level_view_controller.h"
 
-#include "Utils/ResourceManager.h"
 #include "Game/Models/Level.h"
 #include "Game/Models/Level1.h"
+#include "Utils/resource_manager.h"
 
 void LevelViewController::Init() {
   // Set up level.
