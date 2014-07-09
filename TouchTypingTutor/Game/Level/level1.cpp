@@ -1,4 +1,4 @@
-#include "Level/level1.h"
+#include "Game/Level/level1.h"
 
 #include <string>
 
@@ -7,7 +7,7 @@ const int kNumberOfWords = 5;
 const char *kWords[] = {"a", "as", "asd", "asdf", "asdfg"};
 }
 
-Level1::Level1(): wordsRemaining_(kNumberOfWords) {}
+Level1::Level1() : wordsRemaining_(kNumberOfWords) {}
 
 std::string Level1::getWord() {
   if (wordsRemaining_ > 0) {

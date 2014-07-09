@@ -1,5 +1,5 @@
-#ifndef TOUCHTYPINGTUTOR_LEVEL_LEVEL_H_
-#define TOUCHTYPINGTUTOR_LEVEL_LEVEL_H_
+#ifndef TOUCHTYPINGTUTOR_GAME_LEVEL_LEVEL_H_
+#define TOUCHTYPINGTUTOR_GAME_LEVEL_LEVEL_H_
 
 #include <string>
 
@@ -13,4 +13,4 @@ class Level {
   virtual int getWordsRemaining() = 0;
 };
 
-#endif  // TOUCHTYPINGTUTOR_LEVEL_LEVEL_H_
+#endif  // TOUCHTYPINGTUTOR_GAME_LEVEL_LEVEL_H_

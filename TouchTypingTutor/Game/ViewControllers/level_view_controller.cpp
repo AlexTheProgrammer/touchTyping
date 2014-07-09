@@ -1,7 +1,7 @@
 #include "Game/ViewControllers/level_view_controller.h"
 
-#include "Level/level.h"
-#include "Level/level1.h"
+#include "Game/Level/level.h"
+#include "Game/Level/level1.h"
 #include "Utils/resource_manager.h"
 
 namespace {
