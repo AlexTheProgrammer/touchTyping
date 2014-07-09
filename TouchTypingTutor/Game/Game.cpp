@@ -8,12 +8,12 @@ Game::Game() : window_(sf::VideoMode(800, 600), "SFML window") {
 }
 
 int Game::Init() {
-  std::shared_ptr<sf::Image> icon = ResourceManager::ImageFromFile("icon.png");
+  /*std::shared_ptr<sf::Image> icon = ResourceManager::ImageFromFile("icon.png");
   if (icon) {
     // Don't return failure as a missing icon isn't critical.
     window_.setIcon(icon->getSize().x, icon->getSize().y, icon->getPixelsPtr());
   }
-
+*/
   // Replace top element on stack as LevelViewController to LevelViewController code.
   std::unique_ptr<ViewController> levelViewController (new LevelViewController);
   levelViewController->Init();

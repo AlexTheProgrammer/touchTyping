@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4292D8AD18D93856001D347D /* level_view_controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4292D8AC18D93856001D347D /* level_view_controller.cpp */; };
+		42C230CF196C1EBC002F1A10 /* Level.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42C230CB196C1EBC002F1A10 /* Level.cpp */; };
+		42C230D0196C1EBC002F1A10 /* Level1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42C230CD196C1EBC002F1A10 /* Level1.cpp */; };
 		710DA61E196AB1EB004A8A7E /* Resources/Arial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4292D8AF18D95746001D347D /* Resources/Arial.ttf */; };
 		7173BF3318E6A1980077F141 /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7173BF3018E69F450077F141 /* ResourceManager.cpp */; };
 		71B69A2718CE59E00067C81A /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71B69A2518CE59E00067C81A /* game.cpp */; };
@@ -21,6 +23,10 @@
 		4292D8AC18D93856001D347D /* level_view_controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = level_view_controller.cpp; path = Game/ViewControllers/level_view_controller.cpp; sourceTree = "<group>"; };
 		4292D8AE18D93869001D347D /* level_view_controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = level_view_controller.h; path = Game/ViewControllers/level_view_controller.h; sourceTree = "<group>"; };
 		4292D8AF18D95746001D347D /* Resources/Arial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Resources/Arial.ttf; sourceTree = "<group>"; };
+		42C230CB196C1EBC002F1A10 /* Level.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Level.cpp; sourceTree = "<group>"; };
+		42C230CC196C1EBC002F1A10 /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
+		42C230CD196C1EBC002F1A10 /* Level1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Level1.cpp; sourceTree = "<group>"; };
+		42C230CE196C1EBC002F1A10 /* Level1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level1.h; sourceTree = "<group>"; };
 		7173BF3018E69F450077F141 /* ResourceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ResourceManager.cpp; path = Utils/ResourceManager.cpp; sourceTree = "<group>"; };
 		7173BF3118E69F450077F141 /* ResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResourceManager.h; path = Utils/ResourceManager.h; sourceTree = "<group>"; };
 		71B69A2518CE59E00067C81A /* game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game.cpp; path = Game/game.cpp; sourceTree = "<group>"; };
@@ -48,6 +54,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42C230CA196C1EBC002F1A10 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42C230CB196C1EBC002F1A10 /* Level.cpp */,
+				42C230CC196C1EBC002F1A10 /* Level.h */,
+				42C230CD196C1EBC002F1A10 /* Level1.cpp */,
+				42C230CE196C1EBC002F1A10 /* Level1.h */,
+			);
+			name = Models;
+			path = Game/Models;
+			sourceTree = "<group>";
+		};
 		71B69A3118D05A210067C81A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +82,7 @@
 		71D4780A18CDE36B00161C50 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				42C230CA196C1EBC002F1A10 /* Models */,
 				71B69A3118D05A210067C81A /* ViewControllers */,
 				71B69A2518CE59E00067C81A /* game.cpp */,
 				71B69A2618CE59E00067C81A /* game.h */,
@@ -208,6 +227,8 @@
 			files = (
 				7173BF3318E6A1980077F141 /* ResourceManager.cpp in Sources */,
 				71B69A2D18CE5A5D0067C81A /* resource_path.mm in Sources */,
+				42C230D0196C1EBC002F1A10 /* Level1.cpp in Sources */,
+				42C230CF196C1EBC002F1A10 /* Level.cpp in Sources */,
 				71EF787118CDA64600AA15D6 /* main.cpp in Sources */,
 				71B69A5618D0618D0067C81A /* menu_view_controller.cpp in Sources */,
 				71B69A3018D0599A0067C81A /* view_controller.cpp in Sources */,
