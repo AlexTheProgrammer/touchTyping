@@ -1,4 +1,4 @@
-#include "Game/Game.h"
+#include "Game/game.h"
 
 #include "Game/ViewControllers/level_view_controller.h"
 #include "Game/ViewControllers/menu_view_controller.h"
