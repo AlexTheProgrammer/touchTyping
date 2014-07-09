@@ -3,6 +3,8 @@
 
 #include "Game/ViewControllers/view_controller.h"
 
+#include "Level/level.h"
+
 class LevelViewController: public ViewController {
  public:
   void UpdateDisplay(sf::RenderWindow *window, const sf::Time &elapsed);
@@ -10,6 +12,7 @@ class LevelViewController: public ViewController {
 
  private:
   sf::Text text_;
+  std::shared_ptr<Level> level_;
 };
 
 #endif  // TOUCHTYPINGTUTOR_GAME_VIEWCONTROLLERS_LEVEL_VIEW_CONTROLLER_H_

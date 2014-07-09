@@ -4,23 +4,31 @@
 #include "Level/level1.h"
 #include "Utils/resource_manager.h"
 
+namespace {
+const char kFontFilename[] = "Arial.ttf";
+const int kFontSize = 24;
+const sf::Color kFontColor = sf::Color::Red;
+const sf::Uint32 kFontStyle = sf::Text::Bold | sf::Text::Underlined;
+const int kTextScrollSpeed = 100;
+
+const sf::Color kBackgroundColor = sf::Color::White;
+}
+
 void LevelViewController::Init() {
-  // Set up level.
-  Level1 level1;
-  Level * level = &level1;
-  // Set up text.
-  text_.setFont(*ResourceManager::FontFromFile("Arial.ttf"));
-  text_.setString(level->getWord());
-  text_.setCharacterSize(24);
-  text_.setColor(sf::Color::Red);
-  text_.setStyle(sf::Text::Bold | sf::Text::Underlined);
+  level_ = std::shared_ptr<Level>(new Level1());
+
+  text_.setFont(*ResourceManager::FontFromFile(kFontFilename));
+  text_.setString(level_->getWord());
+  text_.setCharacterSize(kFontSize);
+  text_.setColor(kFontColor);
+  text_.setStyle(kFontStyle);
 }
 
 void LevelViewController::UpdateDisplay(sf::RenderWindow *window, const sf::Time &elapsed) {
   if (text_.getPosition().y >= window->getSize().y) {
     text_.setPosition(0, 0);
   }
-  text_.move(0, 100 * elapsed.asSeconds());
-  window->clear(sf::Color::White);
+  text_.move(0, kTextScrollSpeed * elapsed.asSeconds());
+  window->clear(kBackgroundColor);
   window->draw(text_);
 }
