@@ -10,6 +10,7 @@
 		4292D8AD18D93856001D347D /* level_view_controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4292D8AC18D93856001D347D /* level_view_controller.cpp */; };
 		710DA61E196AB1EB004A8A7E /* Resources/Arial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4292D8AF18D95746001D347D /* Resources/Arial.ttf */; };
 		71733B16196C26300055D3F0 /* resource_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71733B14196C26300055D3F0 /* resource_manager.cpp */; };
+		71733B1D196D68150055D3F0 /* level1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71733B1A196D68150055D3F0 /* level1.cpp */; };
 		71B69A2718CE59E00067C81A /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71B69A2518CE59E00067C81A /* game.cpp */; };
 		71B69A2D18CE5A5D0067C81A /* resource_path.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71B69A2C18CE5A5D0067C81A /* resource_path.mm */; };
 		71B69A3018D0599A0067C81A /* view_controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71B69A2E18D0599A0067C81A /* view_controller.cpp */; };
@@ -23,6 +24,9 @@
 		4292D8AF18D95746001D347D /* Resources/Arial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Resources/Arial.ttf; sourceTree = "<group>"; };
 		71733B14196C26300055D3F0 /* resource_manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = resource_manager.cpp; path = Utils/resource_manager.cpp; sourceTree = "<group>"; };
 		71733B15196C26300055D3F0 /* resource_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = resource_manager.h; path = Utils/resource_manager.h; sourceTree = "<group>"; };
+		71733B1A196D68150055D3F0 /* level1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = level1.cpp; path = Level/level1.cpp; sourceTree = "<group>"; };
+		71733B1B196D68150055D3F0 /* level1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = level1.h; path = Level/level1.h; sourceTree = "<group>"; };
+		71733B1E196D685E0055D3F0 /* level.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = level.h; path = Level/level.h; sourceTree = "<group>"; };
 		71B69A2518CE59E00067C81A /* game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game.cpp; path = Game/game.cpp; sourceTree = "<group>"; };
 		71B69A2618CE59E00067C81A /* game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game.h; path = Game/game.h; sourceTree = "<group>"; };
 		71B69A2B18CE5A5D0067C81A /* resource_path.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = resource_path.hpp; path = Utils/resource_path.hpp; sourceTree = "<group>"; };
@@ -48,16 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		42C230CA196C1EBC002F1A10 /* Models */ = {
+		71733B17196D67FE0055D3F0 /* Level */ = {
 			isa = PBXGroup;
 			children = (
-				42C230CB196C1EBC002F1A10 /* Level.cpp */,
-				42C230CC196C1EBC002F1A10 /* Level.h */,
-				42C230CD196C1EBC002F1A10 /* Level1.cpp */,
-				42C230CE196C1EBC002F1A10 /* Level1.h */,
+				71733B1E196D685E0055D3F0 /* level.h */,
+				71733B1A196D68150055D3F0 /* level1.cpp */,
+				71733B1B196D68150055D3F0 /* level1.h */,
 			);
-			name = Models;
-			path = Game/Models;
+			name = Level;
 			sourceTree = "<group>";
 		};
 		71B69A3118D05A210067C81A /* ViewControllers */ = {
@@ -76,7 +78,6 @@
 		71D4780A18CDE36B00161C50 /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				42C230CA196C1EBC002F1A10 /* Models */,
 				71B69A3118D05A210067C81A /* ViewControllers */,
 				71B69A2518CE59E00067C81A /* game.cpp */,
 				71B69A2618CE59E00067C81A /* game.h */,
@@ -115,6 +116,7 @@
 		71EF786A18CDA64600AA15D6 /* TouchTypingTutor */ = {
 			isa = PBXGroup;
 			children = (
+				71733B17196D67FE0055D3F0 /* Level */,
 				71D4780C18CE528600161C50 /* Utils */,
 				71D4780A18CDE36B00161C50 /* Game */,
 				71EF787018CDA64600AA15D6 /* main.cpp */,
@@ -222,6 +224,7 @@
 				71B69A2D18CE5A5D0067C81A /* resource_path.mm in Sources */,
 				71733B16196C26300055D3F0 /* resource_manager.cpp in Sources */,
 				71EF787118CDA64600AA15D6 /* main.cpp in Sources */,
+				71733B1D196D68150055D3F0 /* level1.cpp in Sources */,
 				71B69A5618D0618D0067C81A /* menu_view_controller.cpp in Sources */,
 				71B69A3018D0599A0067C81A /* view_controller.cpp in Sources */,
 				71B69A2718CE59E00067C81A /* game.cpp in Sources */,
