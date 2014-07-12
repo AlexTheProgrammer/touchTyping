@@ -1,8 +1,10 @@
 #include "Game/ViewControllers/level_view_controller.h"
-
+#include <stdlib.h>
+#include <time.h>
 #include "Game/Level/level.h"
 #include "Game/Level/level1.h"
 #include "Utils/resource_manager.h"
+
 
 namespace {
 const char kFontFilename[] = "Arial.ttf";
@@ -12,7 +14,7 @@ const sf::Uint32 kFontStyle = sf::Text::Bold | sf::Text::Underlined;
 const int kTextScrollSpeed = 100;
 
 const sf::Color kBackgroundColor = sf::Color::White;
-}
+  }
 
 void LevelViewController::Init() {
   level_ = std::shared_ptr<Level>(new Level1());
@@ -22,11 +24,13 @@ void LevelViewController::Init() {
   text_.setCharacterSize(kFontSize);
   text_.setColor(kFontColor);
   text_.setStyle(kFontStyle);
+  srand((uint)time(NULL));
 }
 
 void LevelViewController::UpdateDisplay(sf::RenderWindow *window, const sf::Time &elapsed) {
   if (text_.getPosition().y >= window->getSize().y) {
-    text_.setPosition(0, 0);
+    text_.setPosition(rand_r(&seed_) %
+                      static_cast<int>(window->getSize().x - text_.getLocalBounds().width), 0);
   }
   text_.move(0, kTextScrollSpeed * elapsed.asSeconds());
   window->clear(kBackgroundColor);

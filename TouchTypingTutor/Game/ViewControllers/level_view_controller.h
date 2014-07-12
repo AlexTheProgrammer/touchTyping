@@ -13,6 +13,7 @@ class LevelViewController: public ViewController {
  private:
   sf::Text text_;
   std::shared_ptr<Level> level_;
+  unsigned int seed_;
 };
 
 #endif  // TOUCHTYPINGTUTOR_GAME_VIEWCONTROLLERS_LEVEL_VIEW_CONTROLLER_H_
